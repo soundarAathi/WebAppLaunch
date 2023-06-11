@@ -19,8 +19,8 @@ public void loginTest(){
     WebDriver driver= new ChromeDriver();
     driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
     driver.manage().window().maximize();
-    driver.manage().timeouts().implicitlyWait(Duration.ofMillis(60));
-     WebElement user=driver.findElement(By.xpath("//*[@class='oxd-input oxd-input--active']"));
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+     WebElement user=driver.findElement(By.name("username"));
      user.sendKeys("Admin");
      WebElement pass=driver.findElement(By.name("password"));
      pass.sendKeys("admin123");
