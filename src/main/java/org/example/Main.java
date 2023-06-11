@@ -26,7 +26,8 @@ public void loginTest(){
      pass.sendKeys("admin123");
      WebElement logIn=driver.findElement(By.xpath("//*[@type='submit']"));
      logIn.click();
-
+     WebElement usernamecheck=driver.findElement(By.xpath("//*[@class='oxd-input oxd-input--active']"));
+     usernamecheck.sendKeys("Admin");
 
 
 
